@@ -73,7 +73,7 @@ h4 {
 }
 
 span {
-  color: var(--grey);
+  color: var(--bg-hero);
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -85,12 +85,17 @@ a {
   margin: 1.6rem 0;
   color: var(--grey);
   font-size: 1.5rem;
-  border-bottom: 2px dotted var(--pry-color);
+  /*border-bottom: 2px dotted var(--pry-color);*/
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .site-container {
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
+  padding: 0 2rem;
 }
 
 img {
@@ -100,6 +105,13 @@ img {
 
 hr {
   margin: 16px 0;
+}
+
+
+.btn,
+.btn:hover {
+  background: var(--bg-hero);
+  cursor: pointer;
 }
 
 /*This section begins the styling of the main project*/
@@ -112,6 +124,19 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+}
+
+nav .logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 16px;
+}
+
+nav .logo img {
+  width: 8rem;
+  padding: 10px;
 
 }
 
@@ -129,6 +154,20 @@ nav .menu a {
 }
 
 @media only screen and (max-width: 768px) {
+  nav .logo {
+    display: block;
+    width: fit-content;
+    height: max-content;
+  }
+
+  nav .logo img {
+    width: auto;
+  }
+
+  nav .logo h1 {
+    font-size: 2.5rem;
+  }
+
   .mobile-menu {
     display: block;
     font-size: 24px;
@@ -307,4 +346,91 @@ a {
   .wrapper {
     margin: 24px 0;
   }
+}
+
+
+/*styling for footer*/
+
+.btn-pry {
+  display: inline-block;
+  border: none;
+  background: var(--bg-hero);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+footer {
+  background-color: var(--sec-color);
+  margin-top: 40px;
+  padding: 80px 0;
+}
+
+footer,
+h3 {
+  color: #202020;
+}
+
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  column-gap: 40px;
+  justify-items: center;
+}
+
+.footer hr {
+  margin: 60px 0;
+}
+
+.footer-top input[type='email'] {
+
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-top input[type='submit'] {
+  width: 90%;
+  padding: 1rem;
+
+}
+
+
+.footer-bottom {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-menu li {
+  border-bottom: ;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 2rem;
+
+}
+
+
+.socials i {
+  color: var(--bg-hero);
+  border: 1px solid var(--grey);
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width:768px) {
+
+  .footer-top,
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  /* .footer-menu p {
+    display: block;
+    margin: auto;
+  }*/
 }
