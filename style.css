@@ -379,8 +379,9 @@ h3 {
   justify-items: center;
 }
 
-.footer hr {
+footer hr {
   margin: 60px 0;
+
 }
 
 .footer-top input[type='email'] {
@@ -398,7 +399,7 @@ h3 {
 
 
 .footer-bottom {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -407,7 +408,6 @@ h3 {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 2rem;
-
 }
 
 
